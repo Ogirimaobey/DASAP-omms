@@ -90,8 +90,6 @@ nav a.active {
 
 /* --- HERO SECTION --- */
 .hero {
-    /* To add a background image, uncomment the line below and replace the URL */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image-url.jpg'); */
     background-color: #1a2a27; /* Dark green fallback */
     background-size: cover;
     background-position: center;
