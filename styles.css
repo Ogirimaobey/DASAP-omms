@@ -379,9 +379,67 @@ footer {
     width: 100%;
 }
 
-/* --- NEW CODE FOR MOBILE --- */
 @media (max-width: 992px) {
     .journal-detail-page {
         grid-template-columns: 1fr; /* Switch to a single column on tablets and mobile */
+    }
+}
+
+/* --- RECENT PUBLICATIONS SECTION --- */
+.recent-publications {
+    padding: 4rem 0;
+    background-color: var(--light-grey);
+}
+
+.recent-publications h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.article-item-home {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.article-item-home:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.article-item-home h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.article-item-home .article-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.read-more-link {
+    font-family: var(--font-heading);
+    text-decoration: none;
+    color: var(--primary-green);
+    font-weight: 600;
+    white-space: nowrap; /* Prevents the link from wrapping */
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .article-item-home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .read-more-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
     }
 }
