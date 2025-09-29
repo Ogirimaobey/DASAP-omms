@@ -272,3 +272,109 @@ footer {
 .btn-secondary:hover {
     background-color: #00382e; /* Darker primary green */
 }
+
+/* --- JOURNAL DETAIL PAGE --- */
+.journal-detail-page {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3rem;
+    padding: 4rem 20px;
+}
+
+.journal-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.journal-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.journal-tabs {
+    border-bottom: 2px solid var(--light-grey);
+    margin-bottom: 2rem;
+}
+
+.journal-tabs .tab-link {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    color: var(--dark-grey);
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+}
+
+.journal-tabs .tab-link.active {
+    color: var(--primary-green);
+    border-bottom-color: var(--primary-green);
+}
+
+.tab-content {
+    display: none; /* Hide all tabs by default */
+}
+
+.tab-content.active {
+    display: block; /* Show the active tab */
+}
+
+.editorial-list {
+    list-style: none;
+    padding-left: 0;
+}
+.editorial-list li {
+    padding: 0.5rem 0;
+}
+
+.article-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+.article-item:last-child {
+    border-bottom: none;
+}
+.article-item h4 {
+    font-size: 1.2rem;
+    color: var(--primary-green);
+}
+.article-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.25rem 0;
+}
+.article-item a {
+    color: var(--accent-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Sidebar Styles */
+.journal-sidebar .btn-submit {
+    background-color: var(--accent-green);
+    color: var(--white);
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sidebar-box {
+    background-color: var(--light-grey);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.sidebar-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+.sidebar-box p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.journal-cover {
+    width: 100%;
+}
