@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -40,17 +41,17 @@
 
         <section class="stats">
             <div class="container">
-                <div class="stat-item">
+                <div class="stat-item" data-aos="fade-up">
                     <i class="fas fa-book-open"></i>
                     <h3>50+</h3>
                     <p>Journals Published</p>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-file-alt"></i>
                     <h3>10,000+</h3>
                     <p>Articles Indexed</p>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-users"></i>
                     <h3>500+</h3>
                     <p>Expert Reviewers</p>
@@ -62,15 +63,15 @@
             <div class="container">
                 <h2>Featured Journals</h2>
                 <div class="journal-grid">
-                    <div class="journal-card">
+                    <div class="journal-card" data-aos="fade-up">
                         <img src="https://via.placeholder.com/250x350/004d40/FFFFFF?text=OMMS" alt="Journal Cover">
                         <h3>Oracle of Medicine and Medical Sciences</h3>
                     </div>
-                    <div class="journal-card">
+                    <div class="journal-card" data-aos="fade-up" data-aos-delay="100">
                         <img src="https://via.placeholder.com/250x350/004d40/FFFFFF?text=JAT" alt="Journal Cover">
                         <h3>Journal of Advanced Therapeutics</h3>
                     </div>
-                    <div class="journal-card">
+                    <div class="journal-card" data-aos="fade-up" data-aos-delay="200">
                         <img src="https://via.placeholder.com/250x350/004d40/FFFFFF?text=FIB" alt="Journal Cover">
                         <h3>Frontiers in Biotechnology</h3>
                     </div>
@@ -85,6 +86,14 @@
             <p>&copy; 2025 Dr. Aloy's Scientific and Academic Publishers. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation duration
+        once: true, // Whether animation should happen only once - while scrolling down
+      });
+    </script>
 
 </body>
 </html>
