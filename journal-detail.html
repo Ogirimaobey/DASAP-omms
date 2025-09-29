@@ -38,9 +38,9 @@
                 </div>
 
                 <nav class="journal-tabs">
-                    <a href="#" class="tab-link active">Aims & Scope</a>
-                    <a href="#" class="tab-link">Editorial Board</a>
-                    <a href="#" class="tab-link">Articles</a>
+                    <a href="#aims-scope" class="tab-link active">Aims & Scope</a>
+                    <a href="#editorial-board" class="tab-link">Editorial Board</a>
+                    <a href="#articles" class="tab-link">Articles</a>
                 </nav>
 
                 <div id="aims-scope" class="tab-content active">
@@ -94,6 +94,36 @@
             <p>&copy; 2025 Dr. Aloy's Scientific and Academic Publishers. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabLinks = document.querySelectorAll('.tab-link');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Stop the link from jumping the page
+
+                    // Get the ID of the content to show from the link's href
+                    const targetId = link.getAttribute('href'); 
+                    
+                    // Remove 'active' class from all links and content
+                    tabLinks.forEach(function(innerLink) {
+                        innerLink.classList.remove('active');
+                    });
+                    tabContents.forEach(function(content) {
+                        content.classList.remove('active');
+                    });
+
+                    // Add 'active' class to the clicked link
+                    link.classList.add('active');
+                    
+                    // Add 'active' class to the target content to display it
+                    document.querySelector(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
