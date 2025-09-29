@@ -32,3 +32,178 @@ h1, h2, h3 {
     font-weight: 600;
     color: var(--primary-green);
 }
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: var(--white);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-grey);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-green);
+}
+
+nav a.active {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--primary-green);
+}
+
+.header-actions .fa-search {
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+    cursor: pointer;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    /* To add a background image, uncomment the line below and replace the URL */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image-url.jpg'); */
+    background-color: #1a2a27; /* Dark green fallback */
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    font-family: var(--font-heading);
+}
+
+.btn {
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-green);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #43a047; /* Slightly darker green */
+}
+
+/* --- STATS SECTION --- */
+.stats {
+    background-color: var(--light-grey);
+    padding: 4rem 0;
+}
+
+.stats .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat-item .fas {
+    font-size: 2.5rem;
+    color: var(--accent-green);
+    margin-bottom: 0.5rem;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* --- FEATURED JOURNALS SECTION --- */
+.featured-journals {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.featured-journals h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.journal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.journal-card {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.journal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.journal-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.journal-card h3 {
+    font-size: 1.2rem;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+}
