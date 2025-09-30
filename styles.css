@@ -90,7 +90,7 @@ nav a.active {
 
 /* --- HERO SECTION --- */
 .hero {
-    background-image: url('https://i.imgur.com/k9f5c2u.png'); /* NEW MERGED IMAGE WITH CENTERED ORACLE TEXT */
+    background-image: url('Gemini_Generated_Image_9f2al19f2al19f2a.png'); /* UPDATED FILENAME */
     background-color: #1a2a27; /* Dark green fallback */
     background-size: cover;
     background-position: center;
@@ -114,23 +114,6 @@ nav a.active {
 .hero .container {
     position: relative;
     z-index: 2;
-}
-
-/* Remove or adjust h1 and p styles if text is part of image */
-/* These styles are now largely irrelevant as text is in the image */
-.hero h1 { 
-    font-size: 3.5rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero p { 
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
-    font-family: var(--font-heading);
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .btn {
@@ -246,10 +229,6 @@ footer {
 
     nav ul {
         gap: 1.5rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
     }
 
     .stats .container {
@@ -419,7 +398,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-.article-list-home {
+.article-item-home {
     background-color: var(--white);
     padding: 1.5rem;
     border-radius: 8px;
