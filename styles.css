@@ -90,30 +90,38 @@ nav a.active {
 
 /* --- HERO SECTION --- */
 .hero {
-    background-image: url('Gemini_Generated_Image_9f2al19f2al19f2a.png'); 
+    background-image: url('YOUR_CLEAN_BANNER_IMAGE_URL.png'); /* UPDATE THIS FILENAME */
     background-color: #1a2a27; 
     background-size: cover;
     background-position: center;
-    color: var(--white);
-    text-align: center; 
-    padding: 6rem 0;
-    position: relative;
+    height: 400px; /* Give the banner a fixed height */
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); 
-    z-index: 1;
+/* --- INTRO TEXT SECTION --- */
+.intro-text {
+    background-color: var(--white);
+    text-align: center;
+    padding: 4rem 20px;
+    margin-top: -80px; /* Pulls this section up to overlap the hero */
+    position: relative;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.hero .container {
-    position: relative;
-    z-index: 2;
+.intro-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    color: #666;
 }
 
 .btn {
@@ -138,6 +146,7 @@ nav a.active {
 .stats {
     background-color: var(--light-grey);
     padding: 4rem 0;
+    padding-top: 6rem; /* Add extra padding to account for the overlapped section */
 }
 
 .stats .container {
@@ -296,6 +305,15 @@ footer {
         margin-left: 0;
         margin-top: 0.5rem;
     }
+    
+    .intro-text {
+        margin-top: -120px;
+        padding: 2rem 15px;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
 }
 
 /* --- JOURNALS PAGE --- */
@@ -442,16 +460,13 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
 /* --- CONTENT PAGES (About, Submission Guidelines, etc.) --- */
 .content-page {
     padding: 4rem 0;
 }
-
 .content-container {
-    max-width: 800px; /* Narrower width for easier reading */
+    max-width: 800px; 
 }
-
 .content-container h2 {
     font-size: 2.2rem;
     margin-top: 2rem;
@@ -459,13 +474,11 @@ footer {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--light-grey);
 }
-
 .content-container h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
-
 .content-container p {
     margin-bottom: 1rem;
 }
