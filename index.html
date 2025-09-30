@@ -21,7 +21,7 @@
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="#">About DASAP</a></li>
                     <li><a href="journals.html">Journals</a></li>
-                    <li><a href="#">Submission Guidelines</a></li>
+                    <li><a href="submission-guidelines.html">Submission Guidelines</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -33,8 +33,6 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Advancing Global Research</h1>
-                <p>Publishing high-impact, peer-reviewed research across all medical and scientific disciplines.</p>
                 <a href="#" class="btn btn-primary">Submit Your Manuscript</a>
             </div>
         </section>
@@ -64,15 +62,15 @@
                 <h2>Featured Journals</h2>
                 <div class="journal-grid">
                     <div class="journal-card" data-aos="fade-up">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/13498544172649727743_0" alt="Oracle of Medicine and Medical Sciences Journal Cover">
+                        <img src="" alt="Oracle of Medicine and Medical Sciences Journal Cover">
                         <h3>Oracle of Medicine and Medical Sciences</h3>
                     </div>
                     <div class="journal-card" data-aos="fade-up" data-aos-delay="100">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/11416208948712835658_0" alt="Journal of Advanced Therapeutics Journal Cover">
+                        <img src="" alt="Journal of Advanced Therapeutics Journal Cover">
                         <h3>Journal of Advanced Therapeutics</h3>
                     </div>
                     <div class="journal-card" data-aos="fade-up" data-aos-delay="200">
-                        <img src="http://googleusercontent.com/image_collection/image_retrieval/2177947404806796228_0" alt="Frontiers in Biotechnology Journal Cover">
+                        <img src="" alt="Frontiers in Biotechnology Journal Cover">
                         <h3>Frontiers in Biotechnology</h3>
                     </div>
                 </div>
@@ -112,26 +110,21 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/countup.js@2.0.7/dist/countUp.umd.js"></script>
-
     <script>
-      // Initialize AOS
       AOS.init({
-        duration: 800, // Animation duration
-        once: true, // Whether animation should happen only once
+        duration: 800, 
+        once: true,
       });
 
-      // Initialize CountUp
       const statsSection = document.querySelector('.stats');
-
       const options = {
-          root: null, // it is the viewport
-          threshold: 0.5, // 50% of the element is visible
+          root: null,
+          threshold: 0.5,
       };
 
       const observer = new IntersectionObserver(function(entries, observer) {
           entries.forEach(entry => {
               if (entry.isIntersecting) {
-                  // Start counters
                   const countUpJournals = new CountUp('stats-journals', 50, { suffix: '+' });
                   const countUpArticles = new CountUp('stats-articles', 10000, { suffix: '+', separator: ',' });
                   const countUpReviewers = new CountUp('stats-reviewers', 500, { suffix: '+' });
@@ -140,7 +133,6 @@
                   countUpArticles.start();
                   countUpReviewers.start();
 
-                  // Stop observing once the animation has started
                   observer.unobserve(entry.target);
               }
           });
