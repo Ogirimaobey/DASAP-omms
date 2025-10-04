@@ -14,13 +14,15 @@
 
     <header>
         <div class="container">
-            <a href="index.html" class="logo">DASAP</a>
+            <a href="index.html" class="logo">
+                <img src="photo_2025-10-04 17.30.46.jpeg" alt="DASAP Logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About DASAP</a></li>
                     <li><a href="journals.html" class="active">Journals</a></li>
-                    <li><a href="#">Submission Guidelines</a></li>
+                    <li><a href="submission-guidelines.html">Submission Guidelines</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -30,64 +32,7 @@
     </header>
 
     <main>
-        <div class="container journal-detail-page">
-            <div class="journal-main-content">
-                <div class="journal-header">
-                    <h1>Oracle of Medicine and Medical Sciences</h1>
-                    <p class="journal-meta">ISSN: 2786-8524 | Bimonthly | Open Access</p>
-                </div>
-
-                <nav class="journal-tabs">
-                    <a href="#aims-scope" class="tab-link active">Aims & Scope</a>
-                    <a href="#editorial-board" class="tab-link">Editorial Board</a>
-                    <a href="#articles" class="tab-link">Articles</a>
-                </nav>
-
-                <div id="aims-scope" class="tab-content active">
-                    <h2>Aims & Scope</h2>
-                    <p>The Oracle of Medicine and Medical Sciences is a bimonthly peer-reviewed open-access journal that publishes preclinical and clinical research of global significance across all medical disciplines, enabling clinicians and other researchers to learn about developments and innovations both within and across these disciplines.</p>
-                    <p>We accept manuscripts in the following areas: Anaesthesia, Anatomy, Biochemistry, Cancer Research, Cardiology, Dentistry, Dermatology, Diabetes, Endocrinology, and more.</p>
-                </div>
-                 <div id="editorial-board" class="tab-content">
-                    <h2>Editorial Board</h2>
-                    <ul class="editorial-list">
-                        <li><strong>Editor-in-Chief:</strong> Dr. Amgad Rabie, AMO Publisher, Ukraine.</li>
-                        <li><strong>Associate Editor:</strong> Prof. Jane Doe, University of Global Health.</li>
-                        <li><strong>Board Member:</strong> Dr. John Smith, Institute of Clinical Research.</li>
-                        <li><strong>Board Member:</strong> Dr. Emily White, National Center for Biotechnology.</li>
-                    </ul>
-                </div>
-                <div id="articles" class="tab-content">
-                    <h2>Latest Articles</h2>
-                    <div class="article-list">
-                        <div class="article-item">
-                            <h4>The Role of AI in Modern Diagnostics</h4>
-                            <p>Authors: Dr. Alan Grant, Dr. Ellie Sattler</p>
-                            <a href="#">View PDF</a> | <a href="#">DOI: 10.59324/ejmhr.2025.01</a>
-                        </div>
-                        <div class="article-item">
-                            <h4>Advances in Gene Therapy for Cardiovascular Diseases</h4>
-                            <p>Authors: Dr. Ian Malcolm</p>
-                            <a href="#">View PDF</a> | <a href="#">DOI: 10.59324/ejmhr.2025.02</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <aside class="journal-sidebar">
-                <a href="#" class="btn btn-submit">Submit Manuscript</a>
-                <div class="sidebar-box">
-                    <img src="https://via.placeholder.com/250x350/004d40/FFFFFF?text=OMMS" alt="Journal Cover" class="journal-cover">
-                </div>
-                <div class="sidebar-box">
-                    <h3>About this Journal</h3>
-                    <p><strong>Editor-in-Chief:</strong> Dr. Amgad Rabie</p>
-                    <p><strong>Frequency:</strong> Bimonthly</p>
-                    <p><strong>Publisher:</strong> Dr. Aloy's Scientific and Academic Publishers</p>
-                </div>
-            </aside>
-        </div>
-    </main>
+        </main>
 
     <footer>
         <div class="container">
@@ -96,33 +41,7 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabLinks = document.querySelectorAll('.tab-link');
-            const tabContents = document.querySelectorAll('.tab-content');
-
-            tabLinks.forEach(function(link) {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault(); // Stop the link from jumping the page
-
-                    // Get the ID of the content to show from the link's href
-                    const targetId = link.getAttribute('href'); 
-                    
-                    // Remove 'active' class from all links and content
-                    tabLinks.forEach(function(innerLink) {
-                        innerLink.classList.remove('active');
-                    });
-                    tabContents.forEach(function(content) {
-                        content.classList.remove('active');
-                    });
-
-                    // Add 'active' class to the clicked link
-                    link.classList.add('active');
-                    
-                    // Add 'active' class to the target content to display it
-                    document.querySelector(targetId).classList.add('active');
-                });
-            });
-        });
+        // Tab script here
     </script>
 
 </body>
