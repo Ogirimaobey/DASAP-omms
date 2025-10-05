@@ -12,11 +12,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="dasap-logo-transparent.png" alt="DASAP Logo">
+                <img src="6E2D776A-AB18-41F5-8946-EC377D99578B_4_5005_c.jpeg" alt="DASAP Logo">
             </a>
             <nav>
                 <ul>
@@ -31,121 +30,7 @@
             </div>
         </div>
     </header>
-
     <main>
-        <section class="hero"></section>
-
-        <section class="intro-text">
-            <div class="container" data-aos="fade-up">
-                <h1>Advancing Global Research</h1>
-                <p>Publishing high-impact, peer-reviewed research across all medical and scientific disciplines.</p>
-                <a href="#" class="btn btn-primary">Submit Your Manuscript</a>
-            </div>
-        </section>
-
-        <section class="stats">
-            <div class="container">
-                <div class="stat-item" data-aos="fade-up">
-                    <i class="fas fa-book-open"></i>
-                    <h3 id="stats-journals">50+</h3>
-                    <p>Journals Published</p>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-file-alt"></i>
-                    <h3 id="stats-articles">10,000+</h3>
-                    <p>Articles Indexed</p>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-users"></i>
-                    <h3 id="stats-reviewers">500+</h3>
-                    <p>Expert Reviewers</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-journals">
-            <div class="container">
-                <h2>Featured Journals</h2>
-                <div class="journal-grid">
-                    <div class="journal-card" data-aos="fade-up">
-                        <img src="" alt="Oracle of Medicine and Medical Sciences Journal Cover">
-                        <h3>Oracle of Medicine and Medical Sciences</h3>
-                    </div>
-                    <div class="journal-card" data-aos="fade-up" data-aos-delay="100">
-                        <img src="" alt="Journal of Advanced Therapeutics Journal Cover">
-                        <h3>Journal of Advanced Therapeutics</h3>
-                    </div>
-                    <div class="journal-card" data-aos="fade-up" data-aos-delay="200">
-                        <img src="" alt="Frontiers in Biotechnology Journal Cover">
-                        <h3>Frontiers in Biotechnology</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="recent-publications">
-            <div class="container" data-aos="fade-up">
-                <h2>Recent Publications</h2>
-                <div class="article-list-home">
-                    <div class="article-item-home">
-                        <h4>The Role of AI in Modern Diagnostics</h4>
-                        <p class="article-meta">Published in: Oracle of Medicine and Medical Sciences</p>
-                        <a href="journal-detail.html" class="read-more-link">Read More &rarr;</a>
-                    </div>
-                    <div class="article-item-home">
-                        <h4>Advances in Gene Therapy for Cardiovascular Diseases</h4>
-                        <p class="article-meta">Published in: Journal of Advanced Therapeutics</p>
-                        <a href="journal-detail.html" class="read-more-link">Read More &rarr;</a>
-                    </div>
-                    <div class="article-item-home">
-                        <h4>CRISPR-Cas9 Applications in Genetic Engineering</h4>
-                        <p class="article-meta">Published in: Frontiers in Biotechnology</p>
-                        <a href="journal-detail.html" class="read-more-link">Read More &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Dr. Aloy's Scientific and Academic Publishers. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/countup.js@2.0.7/dist/countUp.umd.js"></script>
-    <script>
-      AOS.init({
-        duration: 800, 
-        once: true,
-      });
-
-      const statsSection = document.querySelector('.stats');
-      const options = {
-          root: null,
-          threshold: 0.5,
-      };
-
-      const observer = new IntersectionObserver(function(entries, observer) {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  const countUpJournals = new CountUp('stats-journals', 50, { suffix: '+' });
-                  const countUpArticles = new CountUp('stats-articles', 10000, { suffix: '+', separator: ',' });
-                  const countUpReviewers = new CountUp('stats-reviewers', 500, { suffix: '+' });
-
-                  countUpJournals.start();
-                  countUpArticles.start();
-                  countUpReviewers.start();
-
-                  observer.unobserve(entry.target);
-              }
-          });
-      }, options);
-
-      observer.observe(statsSection);
-    </script>
-
-</body>
+        </main>
+    </body>
 </html>
