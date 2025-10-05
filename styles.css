@@ -35,9 +35,9 @@ h1, h2, h3 {
 
 /* --- HEADER & NAVIGATION --- */
 header {
-    background-color: var(--primary-green); /* Changed to primary green */
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--primary-green); /* Match border to background */
+    background-color: var(--primary-green);
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--primary-green);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -50,9 +50,8 @@ header .container {
 }
 
 .logo img {
-    height: 70px; /* Increased logo height for more visibility */
-    width: auto;
-    filter: brightness(1.2) saturate(1.1); /* Optional: make logo colors pop a bit more */
+    max-width: 320px; /* Increased max-width to make logo "bolder" */
+    height: auto;     
 }
 
 nav ul {
@@ -63,7 +62,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--white); /* Changed to white for visibility on dark background */
+    color: var(--white);
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 1rem;
@@ -73,17 +72,17 @@ nav a {
 
 nav a:hover {
     color: var(--accent-green);
-    border-bottom-color: var(--accent-green); /* Ensure hover border also changes */
+    border-bottom-color: var(--accent-green);
 }
 
 nav a.active {
-    color: var(--white); /* Active link stays white */
-    border-bottom: 2px solid var(--accent-green); /* Accent green for active border */
+    color: var(--white);
+    border-bottom: 2px solid var(--accent-green);
 }
 
 .header-actions .fa-search {
     font-size: 1.2rem;
-    color: var(--white); /* Changed to white for visibility on dark background */
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -313,13 +312,12 @@ footer {
     .intro-text h1 {
         font-size: 2rem;
     }
-
-    /* Adjust header for mobile */
+    
     header {
         padding: 0.8rem 0;
     }
     .logo img {
-        height: 60px; /* Slightly smaller logo on mobile */
+        max-width: 280px;
     }
     nav a {
         font-size: 0.9rem;
