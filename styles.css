@@ -7,7 +7,7 @@
     --white: #ffffff;
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Lora', serif;
-    --font-captivating: 'Playfair Display', serif; /* New captivating font */
+    --font-captivating: 'Playfair Display', serif; 
 }
 
 * {
@@ -488,10 +488,10 @@ footer {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
-.content-container p, .content-container ol {
+.content-container p, .content-container ol, .content-container ul {
     margin-bottom: 1rem;
 }
-.content-container ol {
+.content-container ol, .content-container ul {
     padding-left: 20px;
 }
 
