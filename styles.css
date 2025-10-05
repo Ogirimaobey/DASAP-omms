@@ -7,6 +7,7 @@
     --white: #ffffff;
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Lora', serif;
+    --font-captivating: 'Playfair Display', serif; /* New captivating font */
 }
 
 * {
@@ -50,7 +51,7 @@ header .container {
 }
 
 .logo img {
-    max-width: 320px; /* Increased max-width to make logo "bolder" */
+    max-width: 320px;
     height: auto;     
 }
 
@@ -84,6 +85,37 @@ nav a.active {
     font-size: 1.2rem;
     color: var(--white);
     cursor: pointer;
+}
+
+/* --- SPECIAL JOURNAL HEADER --- */
+.journal-header-special {
+    padding: 1rem 0;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.journal-header-special .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.journal-header-special .cover-art img {
+    height: 60px;
+    width: auto;
+}
+
+.journal-header-special .journal-title-special h1 {
+    font-family: var(--font-captivating);
+    font-size: 2rem;
+    color: var(--primary-green);
+    text-align: center;
+    margin: 0;
+}
+
+.journal-header-special .publisher-logo img {
+    height: 50px;
+    width: auto;
 }
 
 /* --- HERO SECTION --- */
@@ -140,42 +172,15 @@ nav a.active {
     background-color: #43a047; 
 }
 
-/* --- STATS SECTION --- */
-.stats {
+/* --- FEATURED JOURNALS & RECENT PUBLICATIONS --- */
+.featured-journals, .recent-publications, .journal-listing, .content-page {
+    padding: 4rem 0;
+}
+.recent-publications, .page-header {
     background-color: var(--light-grey);
-    padding: 4rem 0;
-    padding-top: 6rem;
 }
-
-.stats .container {
-    display: flex;
-    justify-content: space-around;
+.featured-journals h2, .recent-publications h2 {
     text-align: center;
-}
-
-.stat-item .fas {
-    font-size: 2.5rem;
-    color: var(--accent-green);
-    margin-bottom: 0.5rem;
-}
-
-.stat-item h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0.2rem;
-}
-
-.stat-item p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* --- FEATURED JOURNALS SECTION --- */
-.featured-journals {
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.featured-journals h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -213,7 +218,6 @@ nav a.active {
     font-size: 1.2rem;
 }
 
-/* --- RECENT PUBLICATIONS SECTION --- */
 .recent-publications {
     padding: 4rem 0;
     background-color: var(--light-grey);
@@ -283,11 +287,6 @@ footer {
 
     nav ul {
         gap: 1.5rem;
-    }
-
-    .stats .container {
-        flex-direction: column;
-        gap: 2rem;
     }
 
     .journal-grid {
@@ -407,7 +406,7 @@ footer {
     display: block; 
 }
 
-.editorial-list {
+.editorial-list, .fields-list {
     list-style: none;
     padding-left: 0;
 }
@@ -490,6 +489,24 @@ footer {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
-.content-container p {
+.content-container p, .content-container ol {
     margin-bottom: 1rem;
+}
+.content-container ol {
+    padding-left: 20px;
+}
+
+/* --- NEW STYLE FOR FIELDS LIST --- */
+.fields-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+@media (max-width: 768px) {
+    .fields-list {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
 }
