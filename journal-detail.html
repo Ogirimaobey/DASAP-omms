@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
     <header class="journal-header-special">
         <div class="container">
             <div class="cover-art">
@@ -25,7 +24,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <div class="container journal-detail-page">
             <div class="journal-main-content">
@@ -33,14 +31,12 @@
                     <h1>Oracle of Medicine and Medical Sciences (OMMS)</h1>
                     <p class="journal-meta">Online ISSN: 0000-0000 | Quarterly (Four Issues Per Year) | DOI: 10.00000/omms</p>
                 </div>
-
                 <nav class="journal-tabs">
                     <a href="#aims-scope" class="tab-link active">Aims & Scope</a>
                     <a href="#submission" class="tab-link">Article Submission</a>
                     <a href="#policies" class="tab-link">Policies & Fees</a>
                     <a href="#editorial-board" class="tab-link">Editorial Board</a>
                 </nav>
-
                 <div id="aims-scope" class="tab-content active">
                     <h2>Aims & Scope</h2>
                     <p>Oracle of Medicine and Medical Sciences (OMMS) is a quarterly, double-blind peer-reviewed, open-access, international journal for publishing innovative research in medicine and medical sciences across all medical and healthcare systems. OMMS publishes research of global significance enabling medical workers and other researchers to learn about developments and innovations both within and across these disciplines.</p>
@@ -50,7 +46,6 @@
                         <li>Anatomy</li><li>Biochemistry</li><li>Biotechnology</li><li>Cancer Research</li><li>Dentistry</li><li>Dermatology and Venereal Diseases</li><li>Family Medicine</li><li>Forensic Medicine</li><li>General Surgery</li><li>Geriatrics and Gerontology</li><li>Infectious Diseases</li><li>Internal Medicine</li><li>Medical Education</li><li>Medical Genetics and Genomics</li><li>Medical Laboratory Science</li><li>Medical Rehabilitation</li><li>Microbiology</li><li>Midwifery</li><li>Nursing</li><li>Obstetrics and Gynecology</li><li>Ophthalmology</li><li>Orthopedics</li><li>Otorhinolaryngology</li><li>Pathology</li><li>Pediatrics and Child Health</li><li>Pharmacology and Therapeutics</li><li>Pharmacy</li><li>Physiology</li><li>Physiotherapy</li><li>Psychiatry</li><li>Radiography and Imaging Science</li><li>Radiology</li><li>Surgery</li>
                     </ul>
                 </div>
-                
                 <div id="submission" class="tab-content">
                     <h2>Article Submission</h2>
                     <ol>
@@ -61,12 +56,10 @@
                         <li>Satisfied with your article? Please send your article only as Microsoft Word (.doc or .docx) document, (font: Times New Roman; font size: 12) as an attachment to: editoromms@gmail.com or submit them through our online submission system.</li>
                     </ol>
                 </div>
-
                 <div id="policies" class="tab-content">
                     <h2>Article Processing Charge (APC)</h2>
                     <p><strong>Fee:</strong> 100 USD (for all countries)</p>
                     <p>Payment should be made only after acceptance of the article for publication.</p>
-                    
                     <h2>Editorial Policy</h2>
                     <p>Oracle of Medicine and Medical Sciences (OMMS) abides with professional standards, such as:</p>
                     <ul>
@@ -75,19 +68,16 @@
                         <li>Core Practices of the Committee on Publication Ethics (COPE)</li>
                         <li>Policies of the World Association of Medical Editors (WAME)</li>
                     </ul>
-
                     <h2>Open Access & License</h2>
                     <p>All published articles by OMMS are open-access under the Open Access Policy of Budapest Open Access Initiative. Articles are published under a Creative Commons Attribution (CC BY) 4.0 license.</p>
                 </div>
-
-                 <div id="editorial-board" class="tab-content">
+                <div id="editorial-board" class="tab-content">
                     <h2>Editorial Board</h2>
                     <ul class="editorial-list">
                         <li><strong>Editor-in-Chief:</strong> Prof. Aloysius Obinna Ikwuka</li>
                     </ul>
                 </div>
             </div>
-
             <aside class="journal-sidebar">
                 <a href="mailto:editoromms@gmail.com" class="btn btn-submit">Submit Manuscript</a>
                 <div class="sidebar-box">
@@ -102,32 +92,26 @@
             </aside>
         </div>
     </main>
-
     <footer>
         <div class="container">
             <p>&copy; 2025 Dr. Aloy's Scientific and Academic Publishers. All Rights Reserved.</p>
         </div>
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const tabLinks = document.querySelectorAll('.tab-link');
             const tabContents = document.querySelectorAll('.tab-content');
-
             tabLinks.forEach(function(link) {
                 link.addEventListener('click', function(event) {
                     event.preventDefault();
                     const targetId = link.getAttribute('href');
-                    
                     tabLinks.forEach(innerLink => innerLink.classList.remove('active'));
                     tabContents.forEach(content => content.classList.remove('active'));
-
                     link.classList.add('active');
                     document.querySelector(targetId).classList.add('active');
                 });
             });
         });
     </script>
-
 </body>
 </html>
