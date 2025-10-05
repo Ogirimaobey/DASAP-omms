@@ -172,15 +172,13 @@ nav a.active {
     background-color: #43a047; 
 }
 
-/* --- FEATURED JOURNALS & RECENT PUBLICATIONS --- */
-.featured-journals, .recent-publications, .journal-listing, .content-page {
+/* --- FEATURED JOURNALS SECTION --- */
+.featured-journals {
     padding: 4rem 0;
-}
-.recent-publications, .page-header {
-    background-color: var(--light-grey);
-}
-.featured-journals h2, .recent-publications h2 {
     text-align: center;
+}
+
+.featured-journals h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -218,6 +216,7 @@ nav a.active {
     font-size: 1.2rem;
 }
 
+/* --- RECENT PUBLICATIONS SECTION --- */
 .recent-publications {
     padding: 4rem 0;
     background-color: var(--light-grey);
@@ -496,7 +495,6 @@ footer {
     padding-left: 20px;
 }
 
-/* --- NEW STYLE FOR FIELDS LIST --- */
 .fields-list {
     columns: 2;
     -webkit-columns: 2;
